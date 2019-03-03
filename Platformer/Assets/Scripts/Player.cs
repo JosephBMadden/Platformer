@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myCollider2D;
     BoxCollider2D myFeet;
-    
+
 
 
     // Message then Methods
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
 
         myAnimator.SetBool("Walking", playerHasHorizontalSpeed);
- 
+
     }
 
     private void FlipSprite()
