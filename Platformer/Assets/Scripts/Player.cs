@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
 
         myAnimator.SetBool("Walking", playerHasHorizontalSpeed);
- 
+
     }
 
     // Face right when moving right, vice-versa
