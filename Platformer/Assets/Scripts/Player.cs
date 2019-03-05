@@ -18,10 +18,8 @@ public class Player : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myCollider2D;
     BoxCollider2D myFeet;
-    
 
-
-    // Message then Methods
+    // init
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -38,6 +36,7 @@ public class Player : MonoBehaviour
         Jump();
     }
 
+    // Jump
     private void Jump()
     {
 
@@ -58,6 +57,7 @@ public class Player : MonoBehaviour
 
     }
 
+    // Run
     private void Run()
     {
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); // value is between -1 to +1
@@ -70,6 +70,7 @@ public class Player : MonoBehaviour
  
     }
 
+    // Face right when moving right, vice-versa
     private void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
