@@ -8,6 +8,8 @@ public class MasterControl : MonoBehaviour
 
     public int lives = 3;
 
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +33,15 @@ public class MasterControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void killPlayer(GameObject player)
+    {
+        Destroy(player);
+    }
+
+    public void endGame()
+    {
+        gameOver.SetActive(true);
     }
 }
