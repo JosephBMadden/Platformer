@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 1b108d850ade90446b594bf3d2b433e8
+guid: 4e4aaf2d10ea6d846ab5dd9a52c9e3a5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lever_blue_right_to_left_0
-    21300002: lever_blue_right_to_left_1
-    21300004: lever_blue_right_to_left_2
-    21300006: lever_blue_right_to_left_3
-    21300008: lever_blue_right_to_left_4
-    21300010: lever_blue_right_to_left_5
-    21300012: lever_blue_right_to_left_6
-    21300014: lever_blue_right_to_left_7
+    21300000: lever_blue_left_to_right_0
+    21300002: lever_blue_left_to_right_1
+    21300004: lever_blue_left_to_right_2
+    21300006: lever_blue_left_to_right_3
+    21300008: lever_blue_left_to_right_4
+    21300010: lever_blue_left_to_right_5
+    21300012: lever_blue_left_to_right_6
+    21300014: lever_blue_left_to_right_7
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -114,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lever_blue_right_to_left_0
+      name: lever_blue_left_to_right_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,19 +128,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94e7e9301315e4365ae4df43a5ebaefc
+      spriteID: f659c0074d4b647ec80b12ff0954002c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_1
+      name: lever_blue_left_to_right_1
       rect:
         serializedVersion: 2
-        x: 307
+        x: 306
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,19 +148,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674eb024e026d45768912e79d21d2d82
+      spriteID: f8aa85400cfe7490191e29c320f7a55f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_2
+      name: lever_blue_left_to_right_2
       rect:
         serializedVersion: 2
-        x: 614
+        x: 612
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c32dbeacc628c4e219fc86761da41667
+      spriteID: 7cd0ba13eeda5441fb89cbd53ed8a586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_3
+      name: lever_blue_left_to_right_3
       rect:
         serializedVersion: 2
-        x: 921
+        x: 918
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a8e000b3d744847b5fb819cfe06331
+      spriteID: 6bb8361237b854f6cbd66b2767f9f2a0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_4
+      name: lever_blue_left_to_right_4
       rect:
         serializedVersion: 2
-        x: 1228
+        x: 1224
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20976fa682e9646f7b29919f300b5c8f
+      spriteID: dd9fb4304d8bc4522aa223e8141b098f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_5
+      name: lever_blue_left_to_right_5
       rect:
         serializedVersion: 2
-        x: 1535
+        x: 1530
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,19 +228,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cea7bd9f7e8a40e1b1dc595df1fed0a
+      spriteID: a2c763debe66b4539bc72751ce05e98e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_6
+      name: lever_blue_left_to_right_6
       rect:
         serializedVersion: 2
-        x: 1842
+        x: 1836
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,19 +248,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f26c14079e949869d4b3ed42ecd4ae
+      spriteID: 804c27bd5a3cf43bfb52d3cd708f5b70
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lever_blue_right_to_left_7
+      name: lever_blue_left_to_right_7
       rect:
         serializedVersion: 2
-        x: 2149
+        x: 2142
         y: 0
-        width: 307
-        height: 196
+        width: 306
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c70fb0ab65b64abe892958b22b1eaef
+      spriteID: 885c3237513ac459f9e609857395face
       vertices: []
       indices: 
       edges: []
@@ -276,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 04e8ac4a2c2b3fb4b9a3310b3134e133
+    spriteID: 6a54efb138b80b74c8f57c1ecf28c047
     vertices: []
     indices: 
     edges: []
