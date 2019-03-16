@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     // Config
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 6.5f;
+    [SerializeField] int lives = 4;
 
 
     // Cached component references
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         Run();
         FlipSprite();
         Jump();
+        Attack();
     }
 
     // Jump
@@ -84,5 +86,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void Attack()
+    {
+        if (!CrossPlatformInputManager.GetButtonDown("Attack")) { return; }
+
+        myAnimator.SetTrigger("Attacking");
+
+    }
 
 }

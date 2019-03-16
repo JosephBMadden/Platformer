@@ -15,8 +15,8 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
+  - Interactables
+  - Player
   - 
   - 
   - 
@@ -41,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2118375419
+    locked: 0
+  - name: Foreground
+    uniqueID: 2430343221
+    locked: 0
+  - name: Player
+    uniqueID: 3198503989
+    locked: 0
+  - name: Interactables
+    uniqueID: 1740007455
     locked: 0

@@ -8,24 +8,20 @@ public class FinishLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (SceneManager.GetActiveScene().name == "Level 1")
-        {
-            SceneManager.LoadScene("Level 2");
-        } else if (SceneManager.GetActiveScene().name == "Level 2")
-        {
-            SceneManager.LoadScene("Level 1");
-        }
+        string levelName = SceneManager.GetActiveScene().name;
+        int levelNumber = int.Parse(levelName.Split(' ')[1]);
 
+        SceneManager.LoadScene("Level " + (levelNumber+1));
     }
 }
