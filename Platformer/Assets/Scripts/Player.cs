@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 6.5f;
 
+
     // Cached component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
