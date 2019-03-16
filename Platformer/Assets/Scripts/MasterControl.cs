@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasterControl : MonoBehaviour
 {
@@ -33,15 +34,5 @@ public class MasterControl : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void killPlayer(GameObject player)
-    {
-        Destroy(player);
-    }
-
-    public void endGame()
-    {
-        gameOver.SetActive(true);
     }
 }

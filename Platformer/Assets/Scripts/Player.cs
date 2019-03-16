@@ -10,9 +10,6 @@ public class Player : MonoBehaviour
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 6.5f;
 
-    // State
-    bool isAlive = true;
-
     // Cached component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
@@ -31,6 +28,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(MasterControl.Instance.lives <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+
         Run();
         FlipSprite();
         Jump();
