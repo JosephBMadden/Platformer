@@ -23,5 +23,7 @@ public class FinishLevel : MonoBehaviour
         int levelNumber = int.Parse(levelName.Split(' ')[1]);
 
         SceneManager.LoadScene("Level " + (levelNumber+1));
+
+        MasterControl.Instance.completedLevels[levelNumber] = true; //bec compl start at 0 and levels start at 1
     }
 }

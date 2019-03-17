@@ -9,14 +9,14 @@ public class Player : MonoBehaviour
     // Config
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 6.5f;
-    [SerializeField] int lives = 4;
-
 
     // Cached component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
     CapsuleCollider2D myCollider2D;
     BoxCollider2D myFeet;
+
+    public GameObject startPos;
 
     // init
     void Start()
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     {
         if(MasterControl.Instance.lives <= 0)
         {
-            gameObject.SetActive(false);
+            die();
         }
 
         Run();
@@ -92,6 +92,33 @@ public class Player : MonoBehaviour
 
         myAnimator.SetTrigger("Attacking");
 
+    }
+
+    private void die()
+    {
+        if (!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("DeadAnim")) { myAnimator.SetTrigger("Died"); }
+        if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Dead"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    public void Revive()
+    {
+        if(gameObject.transform.position.y < -10)
+        {
+            gameObject.transform.position = startPos.transform.position;
+        }
+        gameObject.SetActive(true);
+        myAnimator.SetTrigger("Revive");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("OutOfBounds"))
+        {
+            MasterControl.Instance.lives = 0;
+        }
     }
 
 }

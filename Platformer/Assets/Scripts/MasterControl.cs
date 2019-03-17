@@ -9,7 +9,7 @@ public class MasterControl : MonoBehaviour
 
     public int lives = 3;
 
-    public GameObject gameOver;
+    public bool[] completedLevels = new bool[3];
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,7 @@ public class MasterControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        completedLevels[0] = true; //level 1
     }
 
     // Update is called once per frame
