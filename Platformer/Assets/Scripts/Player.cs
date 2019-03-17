@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     BoxCollider2D myFeet;
 
     public GameObject startPos;
+    public int bottomY = -10;
 
     // init
     void Start()
@@ -105,7 +106,7 @@ public class Player : MonoBehaviour
 
     public void Revive()
     {
-        if(gameObject.transform.position.y < -10)
+        if(gameObject.transform.position.y < bottomY)
         {
             gameObject.transform.position = startPos.transform.position;
         }
