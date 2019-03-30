@@ -93,6 +93,7 @@ public class Player : MonoBehaviour
 
         myAnimator.SetTrigger("Attacking");
 
+
     }
 
     private void die()
