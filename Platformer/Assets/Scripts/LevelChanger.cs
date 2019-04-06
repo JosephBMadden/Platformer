@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class LevelChanger : MonoBehaviour
 {
-    public GameObject foreOrange;
     public GameObject foreBlack;
+    public GameObject foreRed;
+    public GameObject foreOrange;
+
+    public string enableColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        foreOrange.SetActive(true);
+        foreRed.SetActive(false);
+        foreOrange.SetActive(false);
         foreBlack.SetActive(true);
     }
 
@@ -24,10 +28,17 @@ public class LevelChanger : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(foreOrange.active)
+            switch (enableColor)
             {
-                foreOrange.SetActive(false);
-                Debug.Log("disabled black");
+                case "orange":
+                    foreOrange.SetActive(true);
+                    break;
+                case "red":
+                    foreRed.SetActive(true);
+                    break;
+                default: //black
+                    foreBlack.SetActive(true);
+                    break;
             }
         }
     }
