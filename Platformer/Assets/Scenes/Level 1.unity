@@ -1026,6 +1026,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &804359961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba4cfdbeb9c34b2595281c6ceb78170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> 74a62f1d04c222ca621d159c085a64c9e4ffd5ad
 --- !u!1 &840685273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,6 +7053,7 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1 &1767023692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7169,6 +7173,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 74a62f1d04c222ca621d159c085a64c9e4ffd5ad
 --- !u!1 &1805798421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,7 +7380,7 @@ RectTransform:
   - {fileID: 840685274}
   - {fileID: 1913692588}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7698,7 +7704,7 @@ PrefabInstance:
     - target: {fileID: 624971018504446495, guid: f52176a5b9624474aad2ca31079aa5f1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 624971018504446495, guid: f52176a5b9624474aad2ca31079aa5f1,
         type: 3}
@@ -7869,7 +7875,11 @@ PrefabInstance:
     - target: {fileID: 9078007411350541362, guid: 5806eb77692a64c97a64e08cd21529b7,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 0
+=======
+      value: 10
+>>>>>>> 74a62f1d04c222ca621d159c085a64c9e4ffd5ad
       objectReference: {fileID: 0}
     - target: {fileID: 9078007411350541362, guid: 5806eb77692a64c97a64e08cd21529b7,
         type: 3}
