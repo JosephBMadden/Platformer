@@ -19,7 +19,7 @@ public class EnemyControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        touched();
     }
 
     private void FixedUpdate()
@@ -70,9 +70,33 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
-        MasterControl.Instance.lives--;
-        if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
+        if (body.IsTouchingLayers(LayerMask.GetMask("Player")))
+        {
+            MasterControl.Instance.lives--;
+            if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
+        }
+
+        if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
+        {
+            Destroy(this);
+        }
+    }*/
+
+
+    void touched()
+    {
+        if (body.IsTouchingLayers(LayerMask.GetMask("Player")))
+        {
+            MasterControl.Instance.lives--;
+            if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
+        }
+
+        if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
+        {
+            Destroy(this.gameObject);
+        }
     }
+
 }
