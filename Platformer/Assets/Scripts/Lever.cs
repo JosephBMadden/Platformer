@@ -6,14 +6,14 @@ public class Lever : MonoBehaviour
 {
     Animator myAnimator;
     BoxCollider2D myBoxCollider;
-    bool isTouchingAttack;
+    bool isTouchingPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = GetComponent<Animator>();
         myBoxCollider = GetComponent<BoxCollider2D>();
-        isTouchingAttack = false;
+        isTouchingPlayer = false;
     }
 
     // Update is called once per frame
@@ -24,16 +24,16 @@ public class Lever : MonoBehaviour
 
     void touched()
     {
-        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Attack")))
+        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
-            isTouchingAttack= false;
+            isTouchingPlayer = false;
             return;
         }
 
-        if (!isTouchingAttack)
+        if (!isTouchingPlayer)
         {
             myAnimator.SetTrigger("Touched");
-            isTouchingAttack = true;
+            isTouchingPlayer = true;
         }
     }
 }

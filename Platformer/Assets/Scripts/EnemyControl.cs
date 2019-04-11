@@ -4,36 +4,22 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
+    private Rigidbody2D body;
+    public LayerMask terrain; //layers recognized by lineCast
 
-    BoxCollider2D myBoxCollider;
+    public float speed;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        myBoxCollider = GetComponent<BoxCollider2D>();
+        body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        touched();
-    }
 
-
-    void touched()
-    {
-        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Attack")))
-        {
-            isTouchingAttack = false;
-            return;
-        }
-
-        if (!isTouchingAttack)
-        {
-            myAnimator.SetTrigger("Touched");
-            isTouchingAttack = true;
-        }
     }
 
     private void FixedUpdate()
