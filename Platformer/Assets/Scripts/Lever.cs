@@ -24,7 +24,7 @@ public class Lever : MonoBehaviour
 
     void touched()
     {
-        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
+        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Attacking")))
         {
             isTouchingPlayer = false;
             return;

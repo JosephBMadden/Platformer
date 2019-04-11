@@ -84,15 +84,22 @@ public class EnemyControl : MonoBehaviour
         }
     }*/
 
-
-    void touched()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+
+         MasterControl.Instance.lives--;
+        if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }      
+        /*
         if (body.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
             MasterControl.Instance.lives--;
             if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
         }
+        */
+    }
 
+    void touched()
+    {
         if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
         {
             Destroy(this.gameObject);
