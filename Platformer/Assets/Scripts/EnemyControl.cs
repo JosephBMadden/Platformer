@@ -70,32 +70,16 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (body.IsTouchingLayers(LayerMask.GetMask("Player")))
-        {
-            MasterControl.Instance.lives--;
-            if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
-        }
-
-        if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
-        {
-            Destroy(this);
-        }
-    }*/
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-         MasterControl.Instance.lives--;
-        if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }      
-        /*
-        if (body.IsTouchingLayers(LayerMask.GetMask("Player")))
+        if (collision.tag == "Player")
         {
             MasterControl.Instance.lives--;
-            if (MasterControl.Instance.lives < 0) { MasterControl.Instance.lives = 0; }
+            if (MasterControl.Instance.lives < 0)
+            {
+                MasterControl.Instance.lives = 0;
+            }
         }
-        */
     }
 
     void touched()
