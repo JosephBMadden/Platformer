@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - OutOfBounds
+  - New tag
+  - person
   layers:
   - Default
   - TransparentFX
