@@ -20,7 +20,7 @@ public class Life : MonoBehaviour
 
     private void Touched()
     {
-        if (myCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
+        if (myCollider.IsTouchingLayers(LayerMask.GetMask("Attacking")))
         {
             MasterControl.Instance.lives++;
             Destroy(this.gameObject);
