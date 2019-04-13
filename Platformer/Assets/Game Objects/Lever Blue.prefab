@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 624971018504446490}
   - component: {fileID: 624971018504446493}
   - component: {fileID: 624971018504446491}
+  - component: {fileID: 8751560415773046955}
   m_Layer: 9
-  m_Name: Lever
+  m_Name: Lever Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,3 +162,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.86, y: 1.23}
   m_EdgeRadius: 0
+--- !u!114 &8751560415773046955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624971018504446948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e1fd7137480e4bde906bedbf74f23bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foreBlack: {fileID: 0}
+  foreRed: {fileID: 0}
+  foreOrange: {fileID: 0}
+  enableColor: red
