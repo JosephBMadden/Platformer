@@ -25,6 +25,7 @@ public class Boss : MonoBehaviour
     void Update()
     {
         fireBalls();
+        touched();
     }
 
     private void FixedUpdate()
@@ -46,6 +47,14 @@ public class Boss : MonoBehaviour
         {
             Instantiate(fireballPrefab, firepoint.position, firepoint.rotation);
             ShootingFireball = false;
+        }
+    }
+
+    void touched()
+    {
+        if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
+        {
+            Destroy(this.gameObject);
         }
     }
 }
