@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Fire
   - OutOfBounds
-  - New tag
-  - person
+  - Enemy
   layers:
   - Default
   - TransparentFX
