@@ -31002,6 +31002,16 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 323268549}
+    - target: {fileID: 5279346351569399445, guid: 49f1be443ea23483fb5c5a4d92a562be,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279346351569399442, guid: 49f1be443ea23483fb5c5a4d92a562be,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f1be443ea23483fb5c5a4d92a562be, type: 3}
 --- !u!1 &960674082 stripped
