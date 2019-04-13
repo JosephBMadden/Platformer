@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 30588520bf5f748d3b7b04c412b7b8bf
+guid: a993d7d764ac04b5982eef72ef62345f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: boss_death_0
-    21300002: boss_death_1
-    21300004: boss_death_2
+    21300000: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_0
+    21300002: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_1
+    21300004: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_2
+    21300006: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_3
+    21300008: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_4
+    21300010: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -23,7 +26,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -35,7 +38,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_death_0
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_0
       rect:
         serializedVersion: 2
-        x: 6660
-        y: 1235
-        width: 330
-        height: 155
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3f3249d19a94a9489e5c09f16df878
+      spriteID: 6db75fda842ed421990a6a467204f750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boss_death_1
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_1
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 957
-        width: 743
-        height: 640
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a894c7e73b1364f068faed0342b716d1
+      spriteID: ec1be6c6659c54e0b97fbff004dd269e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boss_death_2
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_2
       rect:
         serializedVersion: 2
-        x: 6566
-        y: 251
-        width: 992
-        height: 520
+        x: 1028
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +166,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca85491a8420e431093792ad9c596492
+      spriteID: 33411355c7c294f5b98264a532c75f23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db54ff2bc7554d2698834de443b2d5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_4
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb94e5260ad440738f95bce3e651812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-sprite-animation-desktop-wallpaper-visual-effects-fireball-5accddd49c7d33.527792671523375572641_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a0b2d7d03294c0fb5ca6dd363deeee
       vertices: []
       indices: 
       edges: []
@@ -171,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 34fdde05ef59f4612ae322acb26cfb40
+    spriteID: 9106d4b1b17904ee1a602f60cdb80546
     vertices: []
     indices: 
     edges: []
