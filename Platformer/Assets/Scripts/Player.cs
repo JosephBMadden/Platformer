@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     public GameObject startPos;
     public int bottomY = -10;
 
+    private bool invincible = false;
+    public int invincibleCntrMax = 100;
+    private int invincibleCntr = 0;
+
     // init
     void Start()
     {
@@ -40,6 +44,20 @@ public class Player : MonoBehaviour
         FlipSprite();
         Jump();
         Attack();
+    }
+
+    private void FixedUpdate()
+    {
+        if(invincible)
+        {
+            invincibleCntr++;
+            if (invincibleCntr >= invincibleCntrMax)
+            {
+                invincibleCntr = 0;
+                invincible = false;
+            }
+        }
+
     }
 
 
@@ -116,11 +134,32 @@ public class Player : MonoBehaviour
         myAnimator.SetTrigger("Revive");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void TakeDamage()
     {
-        if(collision.CompareTag("OutOfBounds"))
+        //Debug.Log("enemy");
+        MasterControl.Instance.lives--;
+        if (MasterControl.Instance.lives < 0)
         {
             MasterControl.Instance.lives = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Debug.Log(collision.tag);
+
+        switch (collision.tag)
+        {
+            case "OutOfBounds":
+                MasterControl.Instance.lives = 0;
+                break;
+            case "Enemy":
+                if (!invincible)
+                {
+                    invincible = true;
+                    TakeDamage();
+                }
+                break;
         }
     }
 

@@ -99,7 +99,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87d220309dec24181ae5e224cb361dd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!50 &624971018504446493
 Rigidbody2D:
   serializedVersion: 4
@@ -162,7 +162,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.86, y: 1.23}
   m_EdgeRadius: 0
---- !u!114 &8751560415773046955
+--- !u!114 &3105778034227769889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,10 +171,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 624971018504446948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e1fd7137480e4bde906bedbf74f23bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foreBlack: {fileID: 0}
-  foreRed: {fileID: 0}
-  foreOrange: {fileID: 0}
-  enableColor: red
+  m_Script: {fileID: 11500000, guid: 87d220309dec24181ae5e224cb361dd7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:

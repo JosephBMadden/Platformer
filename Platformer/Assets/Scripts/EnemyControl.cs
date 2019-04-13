@@ -74,11 +74,7 @@ public class EnemyControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            MasterControl.Instance.lives--;
-            if (MasterControl.Instance.lives < 0)
-            {
-                MasterControl.Instance.lives = 0;
-            }
+           
         }
     }
 
