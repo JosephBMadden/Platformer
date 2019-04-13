@@ -160,7 +160,13 @@ public class Player : MonoBehaviour
                     TakeDamage();
                 }
                 break;
+            case "Fireball":
+                if (!invincible)
+                { 
+                    invincible = true;
+                    TakeDamage();
+                }
+                break;
         }
     }
-
 }

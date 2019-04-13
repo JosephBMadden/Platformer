@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7571134651821755051}
   - component: {fileID: 7571134651821755048}
   - component: {fileID: 7571134651821755049}
-  m_Layer: 0
+  - component: {fileID: 634990136}
+  m_Layer: 10
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,3 +100,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &634990136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7571134651821755062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a1758da2d7b41298697150be54f6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 7053952506452762920, guid: 05bb76be0ebb44ac6aacd61d17cefcac,
+    type: 3}
+  firepoint: {fileID: 7571134651821755051}
+  body: {fileID: 0}
+  ShootingFireballMax: 100
+  ShootingFireballCrnt: 0
