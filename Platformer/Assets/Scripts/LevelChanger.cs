@@ -4,42 +4,27 @@ using UnityEngine;
 
 public class LevelChanger : MonoBehaviour
 {
-    public GameObject foreBlack;
-    public GameObject foreRed;
-    public GameObject foreOrange;
-
-    public string enableColor;
+    public GameObject toToggle;
+    public bool enabled;
 
     // Start is called before the first frame update
     void Start()
     {
-        foreRed.SetActive(false);
-        foreOrange.SetActive(false);
-        foreBlack.SetActive(true);
+      toToggle.SetActive(enabled);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        enabled = !enabled;
         if(collision.tag == "Player")
         {
-            switch (enableColor)
-            {
-                case "orange":
-                    foreOrange.SetActive(true);
-                    break;
-                case "red":
-                    foreRed.SetActive(true);
-                    break;
-                default: //black
-                    foreBlack.SetActive(true);
-                    break;
-            }
+          toToggle.SetActive(enabled);
         }
     }
 }
