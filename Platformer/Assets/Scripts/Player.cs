@@ -157,14 +157,14 @@ public class Player : MonoBehaviour
                 if (!invincible)
                 {
                     invincible = true;
-                    TakeDamage();
+                    //TakeDamage();
                 }
                 break;
             case "Fireball":
                 if (!invincible)
                 { 
                     invincible = true;
-                    TakeDamage();
+                    //TakeDamage();
                 }
                 break;
         }

@@ -8,6 +8,9 @@ public class EnemyControl : MonoBehaviour
     public LayerMask terrain; //layers recognized by lineCast
 
     public float speed;
+	private bool invinciblePlayer = false;
+	public int invincibleCntrMax = 100;
+    private int invincibleCntr = 0;
 
 
     // Start is called before the first frame update
@@ -24,6 +27,16 @@ public class EnemyControl : MonoBehaviour
 
     private void FixedUpdate()
     {
+		if(invinciblePlayer)
+        {
+            invincibleCntr++;
+            if (invincibleCntr >= invincibleCntrMax)
+            {
+                invincibleCntr = 0;
+                invinciblePlayer = false;
+            }
+        }
+		
         AvoidFalling();
         AvoidStuck();
         MoveForward();
@@ -74,7 +87,14 @@ public class EnemyControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-           
+			if (!invinciblePlayer){
+				invinciblePlayer = true;
+			if (!body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
+			{
+				MasterControl.Instance.lives--;
+			}
+			}
+
         }
     }
 
