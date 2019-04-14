@@ -19,11 +19,16 @@ public class FinishLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string levelName = SceneManager.GetActiveScene().name;
-        int levelNumber = int.Parse(levelName.Split(' ')[1]);
+      switch (collision.tag)
+      {
+          case "Player":
+              string levelName = SceneManager.GetActiveScene().name;
+              int levelNumber = int.Parse(levelName.Split(' ')[1]);
 
-        SceneManager.LoadScene("Level " + (levelNumber+1));
+              SceneManager.LoadScene("Level " + (levelNumber+1));
 
-        MasterControl.Instance.completedLevels[levelNumber] = true; //bec compl start at 0 and levels start at 1
+              MasterControl.Instance.completedLevels[levelNumber] = true; //bec compl start at 0 and levels start at 1
+              break;
+      }
     }
 }

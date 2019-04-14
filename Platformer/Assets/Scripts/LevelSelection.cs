@@ -19,8 +19,7 @@ public class LevelSelection : MonoBehaviour
     private void Awake()
     {
         level1.interactable = true;
-        level2.interactable = false;
-        level3.interactable = false;
+        level2.interactable = true;
     }
 
     private void Start()
