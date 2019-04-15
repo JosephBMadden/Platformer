@@ -146,7 +146,6 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log(collision.tag);
 
         switch (collision.tag)
         {
@@ -157,14 +156,12 @@ public class Player : MonoBehaviour
                 if (!invincible)
                 {
                     invincible = true;
-                    //TakeDamage();
                 }
                 break;
             case "Fireball":
                 if (!invincible)
                 { 
                     invincible = true;
-                    //TakeDamage();
                 }
                 break;
         }

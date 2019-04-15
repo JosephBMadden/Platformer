@@ -7,9 +7,7 @@ public class Boss : MonoBehaviour
 
     public GameObject fireballPrefab;
     public Transform firepoint;
-
-    //public Rigidbody2D body; // giving errors
-
+    private Rigidbody2D body;
 
     private bool ShootingFireball = false;
     public int ShootingFireballMax = 300;
@@ -18,7 +16,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //body = GetComponent<Rigidbody2D>(); // Giving Errors
+        body = GetComponent<Rigidbody2D>(); 
     }
 
     // Update is called once per frame
@@ -51,10 +49,10 @@ public class Boss : MonoBehaviour
     }
 
     void touched()
-    {
-        //if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
-        //{
-        //    Destroy(this.gameObject);
-        //}
+    { 
+        if (body.IsTouchingLayers(LayerMask.GetMask("Attacking")))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
